@@ -208,7 +208,7 @@ winget install k6 --source winget
 ## Clonar repositorio
 
 ```bash
-git clone [URL DEL REPOSITORIO]
+git clone https://github.com/lunakenya/k6.git
 ```
 
 ```bash
