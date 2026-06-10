@@ -1,11 +1,13 @@
 # fakestore-k6-load-test — .gitignore
 # ─────────────────────────────────────
-# Generated report files (add manually to repo after execution if desired)
+# Generated report files (future runs ignored automatically)
 reports/*.json
 reports/*.txt
 
-# Keep the reports directory tracked by git
+# Keep the reports directory and committed execution evidence tracked by git
 !reports/.gitkeep
+!reports/textSummary.txt
+!reports/summary.json
 
 # OS artifacts
 .DS_Store

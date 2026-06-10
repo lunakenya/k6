@@ -1,0 +1,47 @@
+
+====================================================
+  FakeStore Login — Load Test Summary
+  Generated : 2026-06-10T07:19:22.466Z
+====================================================
+
+--- THROUGHPUT ---
+  Total requests    : 2702.00
+  Actual RPS        : 14.98 req/s
+  Dropped iters     : 0
+
+--- RESPONSE TIME ---
+  avg               : 350.46 ms
+  p(50) — median   : 341.73 ms
+  p(90)             : 354.53 ms
+  p(95)             : 377.06 ms  [SLA: < 1500 ms]
+  max               : 1491.05 ms  [SLA: < 1500 ms]
+  TTFB p(95)        : 376.52 ms
+
+--- ERROR RATE ---
+  HTTP failure rate : 0.22 %  [SLA: < 3 %]
+
+--- BUSINESS METRICS ---
+  Login attempts    : 2702.00
+  Login successes   : 2696.00
+  Login failures    : 6.00
+  Token success rate: 99.78 %  [SLA: > 97 %]
+
+--- CHECKS (ALL NAMED CHECKS) ---
+  Total checks      : 8106
+  Passed            : 8094
+  FAILED            : 12  <-- SEE NOTE BELOW
+  Pass rate         : 99.85 %
+
+  NOTE: 12 check(s) failed. These may include requests
+  that exceeded the 1500ms SLA and were cut by REQUEST_TIMEOUT.
+  The test remains valid only if the global checks threshold stays
+  above 97%, aligned with the allowed error budget.
+
+--- THRESHOLDS ---
+  ✓ http_req_failed: rate<0.03
+  ✓ http_req_duration: max<1500
+  ✓ http_req_duration: p(95)<1500
+  ✓ checks: rate>0.97
+  ✓ login_success_rate: rate>0.97
+
+====================================================
