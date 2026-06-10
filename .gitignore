@@ -1,0 +1,25 @@
+# fakestore-k6-load-test — .gitignore
+# ─────────────────────────────────────
+# Generated report files (add manually to repo after execution if desired)
+reports/*.json
+reports/*.txt
+
+# Keep the reports directory tracked by git
+!reports/.gitkeep
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Editor / IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Node.js (not required — K6 runs JS natively)
+node_modules/
+package-lock.json
