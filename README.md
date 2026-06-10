@@ -212,7 +212,7 @@ git clone https://github.com/lunakenya/k6.git
 ```
 
 ```bash
-cd fakestore-k6-load-test
+cd k6
 ```
 
 ---
