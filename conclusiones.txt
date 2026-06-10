@@ -1,12 +1,12 @@
 ===========================================================
-CONCLUSIONES Y HALLAZGOS — EJECUCIÓN REAL
+CONCLUSIONES Y HALLAZGOS 
 Ejercicio 1: Prueba de Carga — FakeStore Login API
 Herramienta: K6 (Grafana) v2.0.0 (go1.26.3, linux/amd64) | Script: load-login.js
 Fecha de ejecución: 2026-06-10
 ===========================================================
 
 ===========================================================
-1. RESUMEN EJECUTIVO
+1. RESUMEN 
 ===========================================================
 
 Se corrigió el proyecto para cumplir literalmente el requisito del reto:
@@ -226,10 +226,6 @@ eliminaron validaciones; los timeouts quedaron visibles en las métricas.
     se usa un timeout menor a 1500 ms y cómo interpretar timeouts como
     errores válidos dentro del margen permitido.
 
-  - conclusiones.txt
-    Se reemplazaron las conclusiones anteriores por los resultados
-    reales de la ejecución con timeout estricto.
-
   - reports/textSummary.txt y reports/summary.json
     Se regeneraron automáticamente con la ejecución real del load test.
 
@@ -256,8 +252,6 @@ registraron correctamente: 6 fallos sobre 2702 requests, equivalentes a
 El escenario main_load sostuvo 20.00 TPS, el p95 quedó en 377.06 ms, el
 token success rate fue 99.78%, los checks aprobaron al 99.85% y K6
 terminó con exit code 0.
-
-VEREDICTO FINAL: LISTO PARA GITHUB.
 
 ===========================================================
 Documento generado para: Ejercicio 1 – Prueba de Carga K6
