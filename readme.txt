@@ -72,7 +72,7 @@ Descarga oficial: https://k6.io/docs/get-started/installation/
 PASOS DE EJECUCIÓN
 -----------------------------------------------------------
 Paso 1: Clonar el repositorio
-  > git clone [PEGAR URL REAL DEL REPOSITORIO]
+  > git clone https://github.com/lunakenya/k6.git
   > cd fakestore-k6-load-test
 
 Paso 2: Verificar k6
@@ -258,7 +258,6 @@ Solución: Verificar con curl que las credenciales del CSV sean válidas.
 
 NOTA DE REPRODUCIBILIDAD
 -----------------------------------------------------------
-Este proyecto es 100% reproducible desde cero.
 Requisitos mínimos para ejecutarlo:
   1. k6 v2.0.0 instalado
   2. Conexión a internet
